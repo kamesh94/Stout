@@ -1,146 +1,314 @@
 <!doctype html>
-<html lang="en">
-  <head>
-  	<title>Sidebar 02</title>
+<html lang="en" class="no-js">
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>Bootstrap Template With Sticky Menu</title>
+    <meta name="description" content="Simplified Bootstrap template with sticky menu">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-menu.css" rel="stylesheet">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Welcome</a>
+            </div>
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-		
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-		
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">Stout Case Study</a>
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="nav nav-tabs mb-3" role="tablist">
-			  <li class="nav-item" role="presentation">
-				<a class="nav-link active" data-mdb-toggle="tab" role="tab" id="tab-1" aria-controls="case-study-1" aria-selected="true" href="#case-study-1">Case Study 1</a>
-			  </li>
-			  <li class="nav-item" role="presentation">
-				<a class="nav-link active" data-mdb-toggle="tab" id="tab-2" role="tab" aria-controls="case-study-2" aria-selected="true" href="#case-study-2">Case Study 2</a>
-			  </li>
-			</ul>
-		  </div>
-		</nav>	  
-	  
-	  
-	  <div class="tab-content">
-		<div id="case-study-1" class="tab-pane fade show active wrapper d-flex align-items-stretch" aria-labelledby="tab-1" role="tabpanel">
-			<nav id="sidebar-1">
-				<div class="custom-menu">
-					<button type="button" id="sidebarCollapse" class="btn btn-primary">
-					<i class="fa fa-bars"></i>
-					<span class="sr-only">Toggle Menu</span>
-					</button>
-				</div>
-				<div class="p-4 pt-5">
-					<h1><a href="index.html" class="logo">Lending Club</a></h1>
-						<ul class="list-unstyled components mb-5">
-						  <li class="active">
-							<a href="#homeSubmenu">Dataset And Issues</a>
-						  </li>
-						  <li>
-						  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Data Visualizations</a>
-						  <ul class="collapse list-unstyled" id="pageSubmenu">
-							<li>
-								<a href="#cs1-dv-1">State-wise loan breakdown</a>
-							</li>
-							<li>
-								<a href="#"></a>
-							</li>
-							<li>
-								<a href="#">Page 3</a>
-							</li>
-							<li>
-								<a href="#">Page 3</a>
-							</li>
-							 <li>
-								<a href="#">Page 3</a>
-							</li>
-						  </ul>
-						  </li>
-						  <li>
-						  <a href="#">Predicting Interest Rate</a>
-						  </li>
-						  <li>
-						  <a href="#">Contact</a>
-						  </li>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#caseStudy1">Case Study 1 - Lending Club</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#caseStudy2">Case Study 2 - Customer Orders</a>
+                    </li>
+                </ul>
+            </div>	<!-- .navbar-collapse -->
+        </div>		<!-- .container -->
+    </nav>
+    <!-- Welcome   -->
+    <section id="welcome" class="welcome-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+					<br><br><br><br><br><br><br><br>
+                    <h1>Stout Case Study</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="caseStudy1" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Data Description and Issues</h1>
+					<p>
+					This data set represents thousands of loans made through the Lending Club platform, which is a platform that allows individuals to lend to other individuals.
+					Dataset has 10000 rows with 55 columns. The columns are related to different factors that go into play when a loan is offered. Information such as Credit scores (through fields of delinquencies, credit history),
+					Home location, Debt-to-Income Ratio, Loan Term and Principal, Collateral etc is offered by the dataset, which are almost always the main factors in deciding the interest rate is also provided by the data set. There is a presence of few Categorical columns and majority Numerical columns.
+					Interesting fact about the data set is contains only loan offers made which is good for modelling what affects the interest rate positively. However, without the presense of loan denied information, we cannot judge trule what impacts interest rate holistically.
+					Another issue with the dataset is the absence of a key identifier of the borrower. The presence of this information could help us answer many more questions - how has defaulting affected a borrower's interest rate over the years, how are good borrowers rewarded in the loan system and what has been the general population trend when it comes to borrowing money.				
+					</p>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg-12">
+                    <h3>Data Visualization 1: State-wise loan breakdown</h3>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg-12">
+                    <iframe src="data-visualization-1.1.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
+                </div>
+            </div>
+			<br>
+			<div class="row">
+                <div class="col-lg-12">
+                    <iframe src="data-visualization-1.2.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
+                </div>
+            </div>
+			<br>
+			<div class="row">
+                <div class="col-lg-12">
+					<p>
+						The above two graphs are aimed to provide a geographic insight on how the interest rate varies by different states of USA and what could be a potential reason for that.
+						The second plot shows us the debt-to-income ratio per state. One can notice that darker shades on color on both the graph on almost similar states.
+						We can assume that states that tend to have a higher average of debt-to-income ratio tend to have higher interest rates as well.
+					</p>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg-12">
+                    <h3>Data Visualization 2: Delinquencies and Interest Rate</h3>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg-12">
+                    <iframe src="data-visualization-2.1.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
+                </div>
+            </div>
+			<br>
+			<div class="row">
+                <div class="col-lg-12">
+                    <iframe src="data-visualization-2.2.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
+                </div>
+            </div>
+			<br>
+			<div class="row">
+                <div class="col-lg-12">
+                    <iframe src="data-visualization-2.3.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
+                </div>
+            </div>
+			<br>			
+			<div class="row">
+                <div class="col-lg-12">
+					<p>
+						Here we have 3 scatter plot to help us understand the impact of delinquencies on an individual's interest rate. The dataset has three variables which give us insights on a borrower's delinquencies.
+						The first scatter plot of Delinquencies in past 2 years follows an expected trend both within the scatterplots as well as the bigger picture i.e. if a borrower has a history of past payment lapses, he/she would receive a loan at higher interest rate that the others.
+						However, one can see some unexpected plot at delinq_2y = 6, where the overall plot tips a bit downward. Similar observation can be made for the variable months since last delinquencies.
+						The third scatter plot, percent of account never delinquent, gives us a much stronger effect of delinquencies on interest rate and shows us that is an individual has a good percentage, he/she gets a lower interest rate
+					</p>
+                </div>
+            </div>
+			<br>
+			<div class="row">
+                <div class="col-lg-12">
+                    <h3>Data Visualization 3: Loan Amount and Loan grade affecting Interest Rate</h3>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg-12">
+                    <iframe src="data-visualization-3.1.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
+                </div>
+            </div>
+			<br>
+			<div class="row">
+                <div class="col-lg-12">
+                    <p>
+						This is an interactive graph which shows are the interest rate varies by the type and grade of the loan.
+						The input dataset was grouped by loan issue month and grade and average of interest rate and loan amount was then calculated.
+						The graph shows data from 3 months when loans were sanctioned. In all the three months, it is very clear that the average interest rate is lowest for grade A and highest for grade G
+						Hence, it is clear that the interest rate is affected heavily by the grade of the loan (to note that the grade of loan are categorized by this fact itself so one can say that this is a causal factor)
+						The loan amount however is very much same across different interest rates and grades.
+					</p>
+                </div>
+            </div>
+			<br>
+			<div class="row">
+                <div class="col-lg-12">
+                    <h3>Data cleansing and assumptions prior to feature selection and model prediction</h3>
+                </div>
+            </div>
+			<br>
+			<div class="row">
+                <div class="col-lg-12 ">
+                    <p>
+						Based on the function run in the code, the output suggest we have 11 columns with 0/NAN values. We now evaluate whether these <strong>missing values</strong> make sense and can they be ignored or imputed
+						<ul>
+							<li>For num_accounts_120d_past_due column, we have 9682 0 values and 318 missing values. We can impute 0 to the missing values here easily since all the data other than missing is 0. It makes sense to remove this column from regression since it provides no value</li>
+							<li>emp_title, emp_length, debt_to_income and months_since_last_credit_inquiry have low percent of 0/NAN values hence we ignore them for now</li>
+							<li>verification_income_joint, annual_income_joint and debt_to_income_joint have the most missing values each almost 85%.These missing  values make sense since they will only be populated when application_type = joint.
+							countOfJointApplications = 1495, 
+							percentOfJointApplication = 14.95
+							From the above calculation, it is very clear that the number of missing 'joint' type values (mostly 85%) is due to joint applications (14.95%)
+							<li>It is hard to impute the joint income and debt ratio. We cannot consider joint income to be 0 since that would lead to extremely high value from debt ratio
+							One way of dealing with this is to split the dataset into two datasets based on application type and model interest rate for each
+							But that does not give us a good model. Since this data is MNAR - Missing Not At Random, we will evaluate the outliers for these columns before imputing the value</li>
 						</ul>
-				</div>
-			</nav>
-		
-			<div id="content" class="p-4 p-md-5 pt-5">
-				<h2 class="mb-4">Description of dataset</h2>
-				<p>
-					This data set represents thousands of loans made through the Lending Club platform, which is a platform that allows individuals to lend to other individuals. Of course, not all loans are created equal. Someone who is a essentially a sure bet to pay back a loan will have an easier time getting a loan with a low interest rate than someone who appears to be riskier. And for people who are very risky? They may not even get a loan offer, or they may not have accepted the loan offer due to a high interest rate. It is important to keep that last part in mind, since this data set only represents loans actually made, i.e. do not mistake this data for loan applications!
-				</p>
-				<br>
-				<h2 class="mb-4">Issues with data</h2>
-			</div>
-		</div>
-		
-		<div id="case-study-2" class="tab-pane fade show active wrapper d-flex align-items-stretch" aria-labelledby="tab-2" role="tabpanel">
-			<nav id="sidebar-2">
-				<div class="custom-menu">
-					<button type="button" id="sidebarCollapse" class="btn btn-primary">
-					<i class="fa fa-bars"></i>
-					<span class="sr-only">Toggle Menu</span>
-					</button>
-				</div>
-				<div class="p-4 pt-5">
-					<h1><a href="index.html" class="logo">Customer Orders</a></h1>
-					<ul class="list-unstyled components mb-5">
-					  <li class="active">
-						<a href="#totalRevenue">Total Revenue Statistics</a>
-					  </li>
-					  <li>
-						<a href="#existingCustomer">Existing Customer Statistics</a>
-					  </li>
-					  <li>
-					  <a href="#newCustomer">New Customer Statistics</a>
-					  </li>
-					  <li>
-					  <a href="#lossCustomer">Customer Attrition Statistics</a>
-					  </li>
-					  <li>
-					  <a href="#overall">OVerall Summary</a>
-					  </li>
-					</ul>
-				</div>
-			</nav>
+					</p>
+					<p>
+					<strong>Outlier detection and handling</strong>
+						<ul>
+							<li>For joint account income, we know that we have 68 outliers out of total 1495 which is 4.5%. We replace it with the median value given the time constraint</li>
+							<li>After dealing with outliers for annual_income_joint. Now we can replace the missing values with mean</li>
+							<li>We replace outliers of all numerical columns to the 5th quantile and 95th quantile since the count of these outliers is not that much. We do this so that the outlier do not interfere with correct modelling</li>
+						</ul>
+					</p>
+					<p>
+					<strong>Data Assumptions</strong>
+						<ul>
+							<li>For months_since_last_delinq and months_since_90d_late, there are no 0 values. Assumption can be made that if no data is available on these two delays, one can assume that they have no such history and is imputed 0</li>
+							<li>Missing Employment length may be replaced with the median of the column. It's assumed that an individual would have had an employment given the presence of income. In order to not let these values impact the prediction model, we assume them to be the median</li>
+							<li>We assume 'Not Applicable' value for verification_income_joint column where there are missing values</li>
+							<li>Assumption is made that debt of an individual and joint applicants is one and the same in order to make debt to income joint meaningful and non-missing</li>
+						</ul>
+					</p>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg-12">
+                    <h3>Feature Set Selection</h3>
+                </div>
+            </div>
+			<br>
+			<div class="row">
+                <div class="col-lg-12">
+                    <p>
+						<ul>
+							<li>Feature set selection is done through Wrapper method step-wise selection criteria</li>
+							<li>Categorical variables are factorized into numerical values</li>
+							<li>Before feature selection, the highly correlated columns are dropped from training set and testing set</li>
+							<li>Feature set of size 15 is chosen at random</li>
+						</ul>
+					</p>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg-12">
+                    <h3>Model Selection</h3>
+                </div>
+            </div>
+			<br>
+			<div class="row">
+                <div class="col-lg-12">
+                    <p><strong>Best Subset Selection Algorithm</strong>
+						<ul>
+							<li>This is brute-force approach of testing the feature set combinations and minimizing the variables which would predict the model</li>
+							<li>This approach has very high time complexity (2^k) and shouldnt be run for large number of independent variables</li>
+							<li>Model with high R-squared value and low RSS is selected as the best predictive model</li>
+						</ul>
+					</p>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg-12">
+					<img src="img/model-selection-1.png" alt="Best Subset Model">
+                </div>
+            </div>
+			<br>
+			<div class="row">
+                <div class="col-lg-12">
+                    <p><strong>OLS method - checking p-values and eliminating non-significant variables</strong>
+						<ul>
+							<li>This approach runs a regression of interest rate against all feature set variables</li>
+							<li>Once run, it produces an OLS summary which provides the statistical significane of each feature set member. The idea is to eliminate the least significant member and re-run the regression until only significant variables are left in the feature set</li>
+							<li>In this case, the chosen feature set through the highly renowned Wrapper method (which internally uses a similar principal) prodcued a set of 15 featured variables of all which were significant in predicting interest rate</li>
+						</ul>
+					</p>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg-12">
+					<img src="img/model-selection-2.png" alt="Best Subset Model">
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg-12">
+                    <p><strong>AIC Stepwise Selection model selection - Minimum AIC value model</strong>
+						<ul>
+							<li>This is probably the best algorithm to select a prediction model which would also consider interaction terms</li>
+							<li>I have accomplished this through R. The procedure begin with a simple model like intercept model progressively adding features to the model such that the AIC value of the next model is lower than the one before</li>
+							<li>Over-fitting is an issue with such a model. The output of this procedure is a model with an AIC value lower than the two previous models but has a lot of features (due to presence of interaction terms)<</li>
+							<li>Looking at the Normal QQ Plot, a thin-tailed distribution exists, a Q-Q plot with a very less or negligible deviation at the ends thus making it a perfect fit for the Normal Distribution.</li>
+						</ul>
+					</p>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg-12">
+					<img src="img/model-selection-3.1.png" alt="Best Subset Model">
+					<img src="img/model-selection-3.2.png" alt="Best Subset Model">
+					<img src="img/model-selection-3.3.png" alt="Best Subset Model">
+                </div>
+            </div>
+			<br>
+			<div class="row">
+                <div class="col-lg-12">
+                    <h3>Feature Set and Model enhancement proposals</h3>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-lg-12">
+                    <p>
+						<ul>
+							<li>Outlier detection and removal could have been more enhanced using the Winsorized estimators</li>
+							<li>Transformation of data was not explored due to limited time frame. There might be better model predicting interest rate once transformed</li>
+							<li>Accuracy of data set (i.e. hit ratios and odds ratio) could have validated the feature set</li>
+						</ul>
+					</p>
+                </div>
+            </div>
+			<br>
+        </div>
+    </section>
 
-			  <div id="totalRevenue">
-				<iframe src="case-study-2.1.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
-			  </div>
-			  
-			  <div id="existingCustomer">
-				<iframe src="case-study-2.2.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
-				<iframe src="case-study-2.3.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
-				<iframe src="case-study-2.4.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
-			  </div>
-			  
-			  <div id="newCustomer">
-				<iframe src="case-study-2.5.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
-				<iframe src="case-study-2.6.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
-				<iframe src="case-study-2.7.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
-			  </div>
-			  
-			  <div id="lossCustomer">
-				<iframe src="case-study-2.8.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
-				<iframe src="case-study-2.9.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
-			  </div>
-			  
-			  <div id="overall">
-				<iframe src="case-study-2.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
-			  </div>
-		</div>
-	  </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
+    <!-- What we do Section -->
+    <section id="caseStudy2" class="whatwedo-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Customer Orders</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+	
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/sticky-menu.js"></script>
+
+</body>
+
 </html>
