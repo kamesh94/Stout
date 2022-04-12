@@ -15,12 +15,12 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<a class="navbar-brand" href="#">Stout Case Study</a>
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-			  <li class="nav-item active">
-				<a class="nav-link" href="#case-study-1">Case Study 1</a>
+			<ul class="nav nav-tabs mb-3" role="tablist">
+			  <li class="nav-item" role="presentation">
+				<a class="nav-link active" data-mdb-toggle="tab" role="tab" id="tab-1" aria-controls="case-study-1" aria-selected="true" href="#case-study-1">Case Study 1</a>
 			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#case-study-2">Case Study 2</a>
+			  <li class="nav-item" role="presentation">
+				<a class="nav-link active" data-mdb-toggle="tab" id="tab-2" role="tab" aria-controls="case-study-2" aria-selected="true" href="#case-study-2">Case Study 2</a>
 			  </li>
 			</ul>
 		  </div>
@@ -28,8 +28,8 @@
 	  
 	  
 	  <div class="tab-content">
-		<div id="case-study-1" class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar">
+		<div id="case-study-1" class="tab-pane fade show active wrapper d-flex align-items-stretch" aria-labelledby="tab-1" role="tabpanel">
+			<nav id="sidebar-1">
 				<div class="custom-menu">
 					<button type="button" id="sidebarCollapse" class="btn btn-primary">
 					<i class="fa fa-bars"></i>
@@ -82,8 +82,8 @@
 			</div>
 		</div>
 		
-		<div id="case-study-2" class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar">
+		<div id="case-study-2" class="tab-pane fade show active wrapper d-flex align-items-stretch" aria-labelledby="tab-2" role="tabpanel">
+			<nav id="sidebar-2">
 				<div class="custom-menu">
 					<button type="button" id="sidebarCollapse" class="btn btn-primary">
 					<i class="fa fa-bars"></i>
@@ -112,28 +112,28 @@
 				</div>
 			</nav>
 
-			  <div id="totalRevenue" class="p-4 p-md-5 pt-5">
+			  <div id="totalRevenue">
 				<iframe src="case-study-2.1.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
 			  </div>
 			  
-			  <div id="existingCustomer" class="p-4 p-md-5 pt-5">
+			  <div id="existingCustomer">
 				<iframe src="case-study-2.2.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
 				<iframe src="case-study-2.3.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
 				<iframe src="case-study-2.4.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
 			  </div>
 			  
-			  <div id="newCustomer" class="p-4 p-md-5 pt-5">
+			  <div id="newCustomer">
 				<iframe src="case-study-2.5.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
 				<iframe src="case-study-2.6.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
 				<iframe src="case-study-2.7.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
 			  </div>
 			  
-			  <div id="lossCustomer" class="p-4 p-md-5 pt-5">
+			  <div id="lossCustomer">
 				<iframe src="case-study-2.8.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
 				<iframe src="case-study-2.9.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
 			  </div>
 			  
-			  <div id="overall" class="p-4 p-md-5 pt-5">
+			  <div id="overall">
 				<iframe src="case-study-2.html" width="100%" height="500" style="border:1px solid black;">  </iframe>
 			  </div>
 		</div>
