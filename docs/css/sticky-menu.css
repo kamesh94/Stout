@@ -57,9 +57,10 @@ html {
 }
 .whatwedo-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #fff;
+    padding-top: 100px;
+    text-align: left;
+    background: #c6d5d5;
+    overflow: auto;
 }
 .contact-section {
     height: 100%;
